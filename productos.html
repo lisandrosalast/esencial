@@ -1,0 +1,562 @@
+<!doctype html><html><head><title>ESENCIAL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="./favicon.ico" /><link rel="icon" href="./favicon.ico" /><link rel="apple-touch-icon-precomposed" href="./imagen/favicon.png" />
+<link rel="stylesheet" href="./css/estilo.css" type="text/css" media="all" />
+</head><body onload="siguiente()" style="background:#f3f3f3"> 
+
+<div id="cabecita">.</div>
+<div id="cabeza"><a href="./index"><img src="./imagen/logo.png" alt="ESENCIAL" height="40px"></a>
+<img src="./imagen/3rayas.png" alt="Menú" style="float:right;height:30px;margin-top:5px">
+</div>
+
+<div class="general" style="background:#f3f3f3">
+<!--Artificio para que no quede por debajo el contenido-->
+<div class="full" style="height:50px;"></div>
+
+<div class="a100">
+
+<div class="a100"><center><h2>Nuestros Productos</h2></center></div>
+	
+	<div style="clear:both"></div>
+
+<div id="grupo" class="full" style="margin: 10px 0px">
+	<style>@media screen and (min-width: 699px){#grupo {display:flex;}}</style>
+	
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/vitamina-b12.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Vitamina B12</h3>
+		</a>
+		<p style="margin:10px 5px 50px;">La mente maestra. Ayuda a tener más energía y a los procesos de la mente.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/vitamina-d.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Vitamina D</h3>
+		</a>
+		<p style="margin:10px 5px;">Contribuye a la absorción de calcio y a reforzar el sistema inmune.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/vitamina-c.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Vitamina C</h3>
+		</a>
+		<p style="margin:10px 5px;">Propicia la formación de colágeno y ayuda reforzar el sistema inmune.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/complejo-b.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Complejo B Activado</h3>
+		</a>
+		<p style="margin:10px 5px;">Sube el nivel de energía y ayuda a convertir la comida en energía.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+</div>
+
+<div id="grupo" class="full" style="margin: 10px 0px">
+	<style>@media screen and (min-width: 699px){#grupo {display:flex;}}</style>
+	
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/biotin.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Biotina</h3>
+		</a>
+		<p style="margin:10px 5px 50px;">Apoya la fuerza del cabello y las uñas, así como la salud de la piel.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/magnesio.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Magnesio</h3>
+		</a>
+		<p style="margin:10px 5px;">Apoya la producción de energía y la relajación muscular.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/calcio.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Calcio Plus</h3>
+		</a>
+		<p style="margin:10px 5px;">Especialmente enriquecido con vitamina D para apoyar la salud ósea.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/zinc.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Zinc</h3>
+		</a>
+		<p style="margin:10px 5px;">Ayuda a mantener una función saludable del sistema inmunológico y la reparación de la piel.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+</div>
+ 
+<div id="grupo" class="full" style="margin: 10px 0px">
+	<style>@media screen and (min-width: 699px){#grupo {display:flex;}}</style>
+	
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/hierro.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Hierro</h3>
+		</a>
+		<p style="margin:10px 5px 50px;">Nuestro hierro se combina con vitamina C para apoyar la producción de energía.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/ginkgo.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Ginkgo y Brahmi</h3>
+		</a>
+		<p style="margin:10px 5px;">Mezcla de hierbas utilizada tradicionalmente para apoyar la memoria y apoyar la concentración y el enfoque mental.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/ashwagandha.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Ashwagandha</h3>
+		</a>
+		<p style="margin:10px 5px;">Hierba adaptogénica que ayuda al cuerpo a adaptarse al estrés y apoya el equilibrio hormonal.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/arandano.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Arándano</h3>
+		</a>
+		<p style="margin:10px 5px;">Antioxidante utilizado tradicionalmente para ayudar a mantener un tracto urinario saludable.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+</div>
+
+<div id="grupo" class="full" style="margin: 10px 0px">
+	<style>@media screen and (min-width: 699px){#grupo {display:flex;}}</style>
+	
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/curcumina.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Curcumina Activada</h3>
+		</a>
+		<p style="margin:10px 5px 50px;">Hierba ayurvédica utilizada para disminuir la inflamación y la hinchazón leves de las articulaciones.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/probioticos.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Probióticos SB</h3>
+		</a>
+		<p style="margin:10px 5px;">Ayuda a restaurar la buena flora intestinal durante y después del uso de antibióticos y apoya el sistema inmunológico.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/astaxantina.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Astaxantina</h3>
+		</a>
+		<p style="margin:10px 5px;">Reduce los radicales libres formados en el cuerpo y apoya la piel, la salud de los ojos y el rendimiento atlético.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+
+	<div class="a25" style="position:relative;color:#000000;background-color:#ffffff">
+		<a href="./?i=producto&id=1" target="_blank" style="color:#000000">
+			<div class="full">
+				<img src="./catalogo/omega.png" width="100%" style="margin:0; padding:0">
+			</div>
+			<br/><h3 style="margin:20px 5px">Omega Vegetal</h3>
+		</a>
+		<p style="margin:10px 5px;">Gran fuente de omega-3 de origen natural, altamente concentrado en una cápsula de tamaño mini.</p>
+		<form method="POST" action="" onsubmit="favorito('i1','p1','u1','f1'); return false">
+			<button id="corazon" name="corazon" style="background:none;border:none;outline:none;position:absolute;top:1px;right:1px">
+				<img id="i1" src="./imagen/corazon-vacio.png">
+			</buttom>
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<input type="text" id="u1" name="u1" readonly="readonly" value="" style="display:none;text-align:center;width:25%">
+			<input type="text" id="f1" name="f1" readonly="readonly" value="0" style="display:none;text-align:center;width:25%">
+		</form>
+		<form method="POST" action="" onsubmit="anadir('p1'); return false">
+			<input type="text" id="p1" name="p1" readonly="readonly" value="1" style="display:none;text-align:center;width:25%">
+			<button id="ana" name="ana" style="background:none;border:none;outline:none;position:absolute;bottom:1px;right:1px">
+				<img src="./imagen/carrito.png">
+			</buttom>
+		</form>
+		<form method="POST" action="./?i=producto-editar&id=1" onsubmit=""; return false">
+			<button id="edi" name="edi" style="background:none;border:none;outline:none;position:absolute;top:1px;left:1px">
+				<img src="./imagen/lapiz.png">
+			</buttom>
+		</form>
+	</div>
+</div>
+
+
+</div>
+
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript">function objetoAjax(){
+var xmlhttp = false;
+try {xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+} catch (e) {
+try {xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+} catch (E) {xmlhttp = false; }}
+if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+xmlhttp = new XMLHttpRequest();}
+return xmlhttp;}
+function favorito(i,p,u,f){
+producto_id = document.getElementById(p).value;
+user_id = document.getElementById(u).value;
+veces_fav = document.getElementById(f).value;
+imagen = document.getElementById(i);
+imagen.src="./imagen/spinner-gris.png";
+ajax = objetoAjax();
+ajax.open("POST", "./modulo/producto-favorito.php", true);
+// event.preventDefault();
+ajax.onreadystatechange = function() {
+if (ajax.readyState == 4){
+resultado = (ajax.responseText);
+corazon = resultado.substr(0,1);
+if (resultado!=''){
+if(corazon==1){imagen.src="./imagen/corazon-lleno.png";}
+else if (corazon==0){imagen.src="./imagen/corazon-vacio.png";}}
+document.getElementById(f).value = resultado.substr(1);}}
+ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+ajax.send("&producto_id="+producto_id+"&user_id="+user_id+"&veces_fav="+veces_fav);}</script>
+<script type="text/javascript">function objetoAjax(){
+var xmlhttp = false;
+try {xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+} catch (e) {
+try {xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+} catch (E) {xmlhttp = false; }}
+if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+xmlhttp = new XMLHttpRequest();}
+return xmlhttp;}
+function anadir(p){
+producto_id = document.getElementById(p).value;
+ajax = objetoAjax();
+ajax.open("POST", "./modulo/pedido-anadir.php", true);
+// event.preventDefault();
+ajax.onreadystatechange = function() {
+if (ajax.readyState == 4){
+resultado = (ajax.responseText);
+document.getElementById("pedido").innerHTML = resultado;}}
+ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+ajax.send("&producto_id="+producto_id);}</script>
+</div>
+<div id="pie">
+<div class="a50" style="text-align:center;"><a href="./index"><b>ESENCIAL</b></a> &copy; 2022<br/>Maracay, Aragua, Venezuela</div>
+<div class="a25"><a href="./index">Inicio</a><br/><a href="./productos">Nuestros Productos</a><br/><a href="./nosotros">¿Quiénes somos?</a><br/><a href="./contacto">Contáctanos</a></div>
+<div class="a25"><b>REDES SOCIALES</b><br/><a href="https://www.facebook.com/LisandroSalasT" target="_blank"><img src="./imagen/facebook-blanco.png"> Facebook</a><br/><a href="https://instagram.com/lisandrosalast" target="_blank"><img src="./imagen/instagram-blanco.png"> Instagram</a><br/><a href="https://wa.me/584162621945" target="_blank"><img src="./imagen/whatsapp-blanco.png"> WhatsApp</a></div>
+</div>
+
+</body>
+</html>
