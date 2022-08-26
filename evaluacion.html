@@ -1,0 +1,223 @@
+<!doctype html><html><head><title>ESENCIAL - Evaluación</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="./favicon.ico" /><link rel="icon" href="./favicon.ico" /><link rel="apple-touch-icon-precomposed" href="./imagen/favicon.png" />
+<link rel="stylesheet" href="./css/estilo.css" type="text/css" media="all" />
+</head><body>
+
+
+
+
+<div class="general">
+<div id="cabecita">.</div>
+<div id="cabeza" style="background:#ffffff"><a href="./index"><img src="./imagen/logo.png" alt="ESENCIAL" height="50px"></a>
+<img src="./imagen/3rayas.png" alt="Menú" style="float:right;height:30px;margin-top:5px">
+</div>
+
+
+<!--Artificio para que no quede por debajo el contenido-->
+<div class="full" style="height:50px"></div>
+<div class="a25"></div>
+
+<div class="a50" style="padding: 70px 0px">
+<h1 id="pregunta" style="font-family: 'Tiro Gurmukhi', serif">¿?</h1><br>
+<p id="respuestas" style="font-family: Fredoka, sans-serif; font-size: 25px; line-height: 150%">...</p><input type="file" id="foto1" name="foto1" onchange="guardaImagen()" style="display:none" accept="image/gif, image/jpeg, image/png" >
+<input type="text" id="enviar_nombre" style="">
+<input type="text" id="enviar_edad" style="">
+<input type="text" id="enviar_interes" style="">
+<input type="text" id="enviar_sexo" style="">
+<input type="text" id="enviar_imagen" style="">
+<button id="atras" onclick="atras()" style="background:#ff8888;color:#ffffff">Atrás</button>
+<button id="otro" onclick="" style="background:#ff8888;color:#ffffff">Otro</button>
+</div>
+
+<div id="pie">
+<div class="a50" style="text-align:center;"><a href="./index"><b>ESENCIAL</b></a> &copy; 2022<br/>Maracay, Aragua, Venezuela</div>
+<div class="a25"><a href="./index">Inicio</a><br/><a href="./productos">Nuestros Productos</a><br/><a href="./nosotros">¿Quiénes somos?</a><br/><a href="./contacto">Contáctanos</a></div>
+<div class="a25"><b>REDES SOCIALES</b><br/><a href="https://www.facebook.com/LisandroSalasT" target="_blank"><img src="./imagen/facebook-blanco.png"> Facebook</a><br/><a href="https://instagram.com/lisandrosalast" target="_blank"><img src="./imagen/instagram-blanco.png"> Instagram</a><br/><a href="https://wa.me/584162621945" target="_blank"><img src="./imagen/whatsapp-blanco.png"> WhatsApp</a></div>
+</div>
+</div>
+
+<script type="module">
+// MÓDULO DE STORAGE
+import { getStorage, ref, uploadBytes, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-storage.js";
+const firebaseConfig = {
+	apiKey: "AIzaSyAUYvmXh_ICMsytwP-dqEHNddNXbHpH6wQ",
+	authDomain: "miesencial.firebaseapp.com",
+	databaseURL: "https://miesencial-default-rtdb.firebaseio.com",
+    projectId: "miesencial",
+    storageBucket: "miesencial.appspot.com",
+    messagingSenderId: "121399636580",
+    appId: "1:121399636580:web:4e7f0bd88761d63137a571",
+    measurementId: "G-V0V5R1R47X"
+  };
+document.getElementById("foto1").addEventListener('change', function subirImagen() {
+	// cadena aleatoria para nombre de archivo
+	var aleatoria = "";
+	var longitud = 20;
+	if (longitud > 0) {
+		const banco = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+		for (let i = 0; i < longitud; i++) {
+			aleatoria += banco.charAt(Math.floor(Math.random() * banco.length));
+		}
+	};
+const storage = getStorage();
+var extension = document.getElementById('foto1').value.substr(-3,3);
+const imagen_final = 'imagen/' + aleatoria + '.' + extension;
+const storageRef = ref(storage, imagen_final);
+var file = document.getElementById('foto1').files[0];
+uploadBytesResumable(storageRef, file).then((snapshot) => {
+    console.log('Uploaded', snapshot.totalBytes, 'bytes.');
+    console.log('File metadata:', snapshot.metadata);
+    // Let's get a download URL for the file.
+    getDownloadURL(snapshot.ref).then((url) => {
+      document.getElementById('enviar_imagen').value = url;
+      // ...
+    });
+}).catch((error) => {
+    console.error('Upload failed', error);
+    // ...
+});
+});
+</script>
+
+<script type="module">
+// MÓDULO DE DATABASE
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+import { getDatabase, ref, set, child, update, remove, get, onValue } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js";
+const firebaseConfig = {
+    apiKey: "AIzaSyAUYvmXh_ICMsytwP-dqEHNddNXbHpH6wQ",
+    authDomain: "miesencial.firebaseapp.com",
+    databaseURL: "https://miesencial-default-rtdb.firebaseio.com",
+    projectId: "miesencial",
+    storageBucket: "miesencial.appspot.com",
+    messagingSenderId: "121399636580",
+    appId: "1:121399636580:web:4e7f0bd88761d63137a571",
+    measurementId: "G-V0V5R1R47X"
+};
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+document.getElementById("atras").addEventListener('click', function setear(){
+	var aleatoria = "";
+	var longitud = 20;
+	if (longitud > 0) {
+		const banco = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+		for (let i = 0; i < longitud; i++) {
+			aleatoria += banco.charAt(Math.floor(Math.random() * banco.length));
+		}
+	};
+	document.cookie = "miesencial_codigo_usuario=" + aleatoria + "; max-age=259200; path=/";
+	var enviar_nombre = document.getElementById('enviar_nombre').value;
+	var enviar_edad = document.getElementById('enviar_edad').value;
+	var enviar_interes = document.getElementById('enviar_interes').value;
+	var enviar_sexo = document.getElementById('enviar_sexo').value;
+	var enviar_imagen = document.getElementById('enviar_imagen').value;
+	set(ref(database, 'pedido/' + aleatoria), {
+		nombre: enviar_nombre,
+		edad: enviar_edad,
+		interes: enviar_interes,
+		sexo: enviar_sexo,
+		imagen: enviar_imagen
+	});
+});
+
+document.getElementById("otro").addEventListener('click', function getear(){
+const dbRef = ref(database);
+get(child(dbRef, 'lisandrosalas')).then((snapshot) => {
+  if (snapshot.exists()) {
+    console.log(snapshot.val());
+	console.log(snapshot.val().nombre);
+	console.log('Tiene '+snapshot.val().edad+' años');
+	console.log(Object.keys(snapshot.val()).length+' campos');
+  } else {
+    console.log("No data available");
+  }
+}).catch((error) => {
+  console.error(error);
+});
+});
+
+</script>
+
+<script type="text/javascript">
+
+var progreso = 1;
+var nombre;
+var edad;
+var interes;
+var sexo;
+
+function atras(){
+	progreso--;
+	evaluar();
+}
+
+function guardaNombre(){
+	nombre = document.getElementById('nombre').value;
+	console.log('Este es el nombre: ' + nombre);
+	document.getElementById('enviar_nombre').value = nombre;
+	progreso++;
+	evaluar();
+}
+
+function guardaEdad(){
+	edad = document.getElementById('edad').value;
+	console.log('Tiene ' + edad + ' años');
+	document.getElementById('enviar_edad').value = edad;
+	progreso++;
+	evaluar();
+}
+
+function guardaInteres(){
+	interes = document.querySelector('input[name="interes"]:checked').value;
+	console.log('Seleccionó la opción ' + interes);
+	document.getElementById('enviar_interes').value = interes;
+	progreso++;
+	evaluar();
+}
+
+function guardaSexo(){
+	sexo = document.querySelector('input[name="sexo"]:checked').value;
+	console.log('Afirma ser de sexo ' + sexo);
+	document.getElementById('enviar_sexo').value = sexo;
+	progreso++;
+	evaluar();
+}
+
+function guardaImagen(){
+	imagen = document.getElementById('foto1').value;
+	console.log('La imagen se subió');
+	document.getElementById('enviar_imagen').value = imagen;
+	progreso++;
+	evaluar();
+}
+
+function evaluar(){
+if  (progreso == 1){
+	document.getElementById('pregunta').innerHTML = "Tu nombre es ...";
+	document.getElementById('respuestas').innerHTML = '<center><input type="text" id="nombre" style="font-family: Kalam, sans-serif; font-size: 25px; width:90%; border:none; padding:10px; border-bottom:2px solid black"><br/><br/><button id="boton_nombre" onclick="guardaNombre()" style="background:#77dd88; color:#ffffff">Siguiente</button></center>';
+	}
+if (progreso == 2){
+	document.getElementById('pregunta').innerHTML = "¿Cuántos años tienes?";
+	document.getElementById('respuestas').innerHTML = '<center><input type="text" id="edad" maxlength="2" style="font-family: Kalam, sans-serif; font-size: 25px; width:90%; border:none; padding:10px; border-bottom:2px solid black"><br/><br/><button id="boton_edad" onclick="guardaEdad()"  style="background:#77dd88; color:#ffffff">Siguiente</button></center>';
+	}
+if  (progreso == 3){
+	document.getElementById('pregunta').innerHTML = "¿Por qué te interesan los suplementos nutricionales?";
+	document.getElementById('respuestas').innerHTML = '<input type="radio" id="op1" name="interes" value="1" onclick="guardaInteres()"><label for="op1">Recomendación de un amigo</label><br><input type="radio" id="op2" name="interes" value="2" onclick="guardaInteres()"><label for="op2">Me causa curiosidad</label><br><input type="radio" id="op3" name="interes" value="3" onclick="guardaInteres()"><label for="op3">Siempre he consumido suplementos y vitaminas</label>';
+	}
+if  (progreso == 4){
+	document.getElementById('pregunta').innerHTML = "Tu sexo de nacimiento es ...";
+	document.getElementById('respuestas').innerHTML = '<input type="radio" id="op1" name="sexo" value="masculino" onclick="guardaSexo()"><label for="op1">Masculino</label><br><input type="radio" id="op2" name="sexo" value="femenino" onclick="guardaSexo()"><label for="op2">Femenino</label>';
+	}
+if  (progreso == 5){
+	document.getElementById('pregunta').innerHTML = "Sube la imagen";
+	document.getElementById('foto1').style = "display:block";
+	//getElementById('respuestas').innerHTML = '<input type="file" id="foto1" name="foto1" onchange="guardaImagen()">';
+	}
+}
+evaluar();
+</script>
+
+
+
+</body>
+</html>

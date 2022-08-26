@@ -1,0 +1,118 @@
+<!doctype html><html>
+	<head>
+		<title>ESENCIAL</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="./favicon.ico" /><link rel="icon" href="./favicon.ico" /><link rel="apple-touch-icon-precomposed" href="./imagen/favicon.png" />
+		<link rel="stylesheet" href="./css/estilo.css" type="text/css" media="all" />
+	</head>
+	<body>
+	<div class="general">
+
+		<div class="a100">
+			<form method="POST" action="./producto-editar" autocomplete="off" enctype="multipart/form-data">
+				<div class="a100">
+					<b>Foto 1</b><br/>
+					<input type="text" id="text" name="foto1" value="" style="text-align:center;width:95%">
+					<input type="file" id="archivo" name="archivo1">
+				</div>
+				<div class="a100">
+					<b>Foto 2</b><br/>
+					<input type="text" id="text" name="foto2" value="" style="text-align:center;width:95%">
+					<input type="file" id="archivo" name="archivo2">
+				</div>
+				<div class="a100">
+					<b>Foto 3</b><br/>
+					<input type="text" id="text" name="foto3" value="" style="text-align:center;width:95%">
+					<input type="file" id="archivo" name="archivo3">
+				</div>
+				<div class="a100">
+					<b>Foto 4</b><br/>
+					<input type="text" id="text" name="foto4" value="" style="text-align:center;width:95%">
+					<input type="file" id="archivo" name="archivo4">
+				</div>
+				<div class="a100">
+					<b>Foto 5</b><br/>
+					<input type="text" id="text" name="foto5" value="" style="text-align:center;width:95%">
+					<input type="file" id="archivo" name="archivo5">
+				</div>
+				<div class="a100">
+					<b>Foto 6</b><br/>
+					<input type="text" id="text" name="foto6" value="" style="text-align:center;width:95%">
+					<input type="file" id="archivo" name="archivo6">
+				</div>
+				<div class="a100">
+					<b>Categoría</b><br/>
+					<input type="text" id="text" name="categoria" value="" autocomplete="on" style="text-align:center;width:95%">
+				</div><div class="a100">
+					<b>SubCategoría</b><br/>
+					<input type="text" id="text" name="subcategoria" value="" autocomplete="on" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Marca</b><br/>
+					<input type="text" id="text" name="marca" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Producto</b><br/>
+					<input type="text" id="text" name="producto" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Descripción</b><br/>
+					<textarea type="text" id="text" rows="5" name="descripcion" value="" maxlength="10000" style="width:95%"></textarea>
+				</div>
+				<div class="a100">
+					<b>Costo</b><br/>
+					<input type="text" id="text" name="costo" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Ganancia Detal (%)</b><br/>
+					<input type="text" id="text" name="ganancia_detal" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Ganancia Mayor (%)</b><br/>
+					<input type="text" id="text" name="ganancia_mayor" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Mayor desde</b><br/>
+					<input type="text" id="text" name="mayor" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Disponible</b><br/>
+					<input type="text" id="text" name="inventario" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Mínimo</b><br/>
+					<input type="text" id="text" name="minimo" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Máximo</b><br/>
+					<input type="text" id="text" name="maximo" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Favoritos</b><br/>
+					<input type="text" id="text" name="favoritos" value="" style="text-align:center;width:95%">
+				</div>
+				<div class="a100">
+					<b>Modificado</b><br/>
+					<input type="text" id="text" name="modificado" value="" style="text-align:center;width:95%">
+				</div>
+				<center>
+					<input type="text" id="text" name="id" value="" readonly="readonly" style="text-align:center;width:0%;display:none">
+				<div class="a100">
+					<input type="submit" id="submit" name="guardar" value="Guardar"/>
+				</div>
+				</center>
+			</form>
+		</div>
+		<div class="a100">
+			<p><a href="./productos">Todos los productos</a><br/><a href="./producto-editar">Nuevo producto</a></p>
+		</div>
+
+
+		<div id="pie">
+			<div class="a50" style="text-align:center;"><a href="./index"><b>ESENCIAL</b></a> &copy; 2022<br/>Maracay, Aragua, Venezuela</div>
+			<div class="a25"><a href="./index">Inicio</a><br/><a href="./productos">Nuestros Productos</a><br/><a href="./nosotros">¿Quiénes somos?</a><br/><a href="./contacto">Contáctanos</a></div>
+			<div class="a25"><b>REDES SOCIALES</b><br/><a href="https://www.facebook.com/LisandroSalasT" target="_blank"><img src="./imagen/facebook-blanco.png"> Facebook</a><br/><a href="https://instagram.com/lisandrosalast" target="_blank"><img src="./imagen/instagram-blanco.png"> Instagram</a><br/><a href="https://wa.me/584162621945" target="_blank"><img src="./imagen/whatsapp-blanco.png"> WhatsApp</a></div>
+		</div>
+	</div>
+	</body>
+</html>

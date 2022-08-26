@@ -1,0 +1,157 @@
+<!doctype html><html>
+	<head>
+		<title>ESENCIAL</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="./favicon.ico" /><link rel="icon" href="./favicon.ico" /><link rel="apple-touch-icon-precomposed" href="./imagen/favicon.png" />
+		<link rel="stylesheet" href="./css/estilo.css" type="text/css" media="all" />
+	</head>
+	<body onload="siguiente()">
+	<div class="general">
+		<div id="cabecita">.</div>
+		<div id="cabeza" style="background:#ffffff">
+			<a href="./index"><img src="./imagen/logo.png" alt="ESENCIAL" height="50px"></a>
+			<img src="./imagen/3rayas.png" alt="Menú" style="float:right;height:30px;margin-top:5px" onclick="mostrarMenu()">
+		</div>
+		<div id="menu" style="display: none; position: fixed; top: 60px; right: 0px; z-index: 8000; width: 300px; text-align: left; background-color: #666666; color:#ffffff; font-size: 18px/*border-bottom: solid 3px #666666;*/">
+			<style>h1, h2, h3, h4 {font-family: 'Tiro Gurmukhi', serif} p{font-family: Fredoka, sans-serif; font-size: 18px; line-height: 150%} .item{font-family: sans-serif;padding: 20px 0px; border-top: 1px solid white; border-bottom: 1px solid white}</style>
+			<center>
+				<a href="./productos" style="color:#ffffff">
+					<div class="item" style="color:#ffffff">PRODUCTOS</div>
+				</a>
+				<a href="./evaluacion" style="color:#ffffff">
+					<div class="item" style="color:#ffffff">EVALUACIÓN</div>
+				</a>
+					<div class="item" style="color:#ffffff">CONTACTO</div>
+					<div class="item" style="color:#ffffff">INICIO </div>
+			</center>
+		</div>
+		
+		<!--Artificio para que no quede por debajo el contenido-->
+			<div class="full" style="height:50px;"></div>
+			<div class="full" style="margin:20px 0;/*background:#eeeeee*/">
+				<div id="presentacion" style="position: relative; width: 100%;">
+					<!--img src="./imagen/caja_esencial.jpg" style="width:100%"-->
+					<img src="./imagen/pack_diario_inclinado.png" width="40%" style="margin-right: 10%; margin-left:50%">
+					<div class="solopc" style="position:absolute;top:15%;width:50%;padding:20px">
+						<center>
+							<h1 style="font-family: 'Kalam', serif">tu pack diario de vitaminas y suplementos nutricionales totalmente personalizado...</h1>
+							<a href="./evaluacion">
+								<button style="padding: 20px; background: #ff8888; color: #ffffff; margin-top: 30px">
+									<b>LO QUIERO</b>
+								</button>
+							</a>
+						</center>
+					</div>
+				</div>
+			</div>
+		<style>p{text-align:justify}</style>
+			<div class="full" style="background:#fafafa;padding:100px 0px">
+				<div class="a10"></div><div class="a20"><center><!--img src="./imagen/pack_diario.png" style="width:60%"--></center></div>
+				<div class="a60">
+					<h1 style="color:#666666">Esencial es el resultado de personalizar tus suplementos nutricionales según tus propios y únicos requerimientos</h1>
+				</div>
+				<div class="a10"></div>
+			</div>
+			<div class="full" style="/*background:#ffffdd;*/ padding:100px 0px">
+
+			<div class="a20"></div>
+					<div class="a60">
+					<h2>Un pack vitamínico hecho a tu justa medida</h2><p>Eso de que un producto sirve para todo y para todos no es cierto. Tú deberías poder consumir únicamente los productos que necesitas, y eso es justamente lo que Esencial es: un pack personalizado con lo que realmente necesitas para cada día en materia de suplementos nutricionales.</p>
+					</div>
+				</div>
+				<div class="a20"></div>
+			
+			<div class="full" style="padding:100px 0px; background:#fafafa">
+				<div class="a100">
+					<center><h1>¿Cómo funciona?</h1></center>
+				</div>
+				<div class="full" id="grupo">
+				<style>@media screen and (min-width: 699px){#grupo {display:flex;}}</style>
+					<div class="a33" style="background:#ffffff">
+						<center><h1 style="background:#ff8888;color:#ffffff;font-family:Kalam,sans-serif;margin:0 0 15px">Paso 1</h1>
+						<img src="./imagen/paso1.png" style="width:50%"></center>
+						<p>Completa la evaluación para que podamos recomendarte suplementos nutricionales y vitaminas a tu medida.</p>
+					</div>
+					<div class="a33" style="background:#ffffff">
+						<center><h1 style="background:#77dd88;color:#ffffff;font-family:Kalam,sans-serif;margin:0 0 15px">Paso 2</h1>
+						<img src="./imagen/paso2.png" style="width:50%"></center>
+						<p>Nuestro equipo de especialistas pone la ciencia a tu servicio para crear tus packs personalizados.</p>
+					</div>
+					<div class="a33" style="background:#ffffff">
+						<center><h1 style="background:#88aaff;color:#ffffff;font-family:Kalam,sans-serif;margin:0 0 15px">Paso 3</h1>
+						<img src="./imagen/paso3.png" style="width:50%"></center>
+						<p>Recibe tus packs personalizados y comienza el camino a un estilo de vida saludable y práctico.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="full" style="/*border-bottom:50px solid #ddffdd; border-left:100vw solid #ffffdd*/"></div>
+			<div class="full" style="padding:100px 0px">
+				<div class="a10"></div><div class="a20"><center><img src="./imagen/next_level.png" style="width:50%"></center></div>
+				<div class="a60">
+					<h1>¡Lleva al siguiente nivel tu <a id="que" href="" style="color:#ff8888"></a>!</h1>
+					<p>Una simple evaluación en línea nos ayudará a conocer mejor tus hábitos alimenticios, tus metas de salud y tus requerimientos, para poder personalizar nuestra recomendación para ti.</p>
+					<center>
+						<a href="./evaluacion">
+							<button style="padding: 20px; background: #77dd88; color: #ffffff; margin-top: 30px"><b>QUIERO MEJORAR MI VIDA</b></button>
+						</a>
+					</center>
+				</div>
+				<div class="a10"></div>
+			</div>
+
+			<div class="full" style="/*border-top:50px solid #ddffdd; border-left:100vw solid #ffffff*/"></div>
+			<div class="full" style="padding:100px 0px; background:#fafafa">
+				<div class="a20"></div>
+				<div class="a60">
+					<h1>¿Cómo adquirir Esencial?</h1>
+					<p>Esencial va hasta donde tú quieras. Una vez que completes tu pedido, generalmente después de una evaluación, sea en línea o por ponerte en contacto con alguno de nuestros expertos, realizas tu pago y enviaremos tu paquete mensual personalizado al lugar que desees o incluso puedes buscarlo personalmente en nuestras oficinas.</p>
+				</div>
+				<div class="a20"></div>
+			</div>
+			<div class="full" style="/*border-bottom:50px solid #ffdddd; border-left:100vw solid #ffffff*/"></div>
+			<div class="full" style="padding:100px 0px">
+				<div class="a10"></div>
+				<div class="a60">
+					<h3>Descarga nuestra app y empieza a tomar el control de tu salud, de tu nutrición y de tu vida...</h3>
+				</div>
+				<div class="a20"><center><img src="./imagen/celular.png" style="width:50%"></center></div>
+				<div class="a10"></div>
+			</div>
+		
+<script type="text/javascript">
+	t1="salud"
+	t2="energía"
+	t3="mente"
+	t4="cuerpo"
+	t5="pelo"
+	t6="piel"
+	h1="./evaluacion"
+	h2="./evaluacion"
+	h3="./evaluacion"
+	h4="./evaluacion"
+	h5="./evaluacion"
+	h6="./evaluacion"
+	var i=Math.round(Math.random() * 5) + 1;
+	var t=document.getElementById("que");
+	function siguiente() {   
+		if (i == 1) {t.href=h2; t.innerHTML=t2; i=2;}
+		else if (i == 2) {t.href=h3; t.innerHTML=t3; i=3;}
+		else if (i == 3) {t.href=h4; t.innerHTML=t4; i=4;}
+		else if (i == 4) {t.href=h5; t.innerHTML=t5; i=5;}
+		else if (i == 5) {t.href=h6; t.innerHTML=t6; i=6;}
+		else if (i == 6) {t.href=h1; t.innerHTML=t1; i=1;}}
+	setInterval('siguiente()',1500);
+	function mostrarMenu(){
+		if(document.getElementById('menu').style.display=="none"){document.getElementById('menu').style.display="block";}
+		else if(document.getElementById('menu').style.display=="block"){document.getElementById('menu').style.display="none";}
+	}
+</script>
+		<div id="pie">
+			<div class="a50" style="text-align:center;"><a href="./index"><b>ESENCIAL</b></a> &copy; 2022<br/>Maracay, Aragua, Venezuela</div>
+			<div class="a25"><a href="./index">Inicio</a><br/><a href="./productos">Nuestros Productos</a><br/><a href="./nosotros">¿Quiénes somos?</a><br/><a href="./contacto">Contáctanos</a></div>
+			<div class="a25"><b>REDES SOCIALES</b><br/><a href="https://www.facebook.com/LisandroSalasT" target="_blank"><img src="./imagen/facebook-blanco.png"> Facebook</a><br/><a href="https://instagram.com/lisandrosalast" target="_blank"><img src="./imagen/instagram-blanco.png"> Instagram</a><br/><a href="https://wa.me/584162621945" target="_blank"><img src="./imagen/whatsapp-blanco.png"> WhatsApp</a></div>
+		</div>
+	</div>
+	</body>
+</html>
